@@ -1,6 +1,9 @@
 # bi-range-sum-lib
 
-Maven Repository
+## GitHub Repository  
+https://github.com/sandeep-being-infinity/bi-range-sum-lib
+
+## Maven Repository
 1.  https://central.sonatype.com/namespace/io.github.sandeep-being-infinity
 2.  https://central.sonatype.com/artifact/io.github.sandeep-being-infinity/bi-range-sum-lib/versions
 
@@ -48,3 +51,18 @@ Pre-Requisites:  JAVA and MAVEN should be installed.
     ```
     mvn clean compile exec:java -Dexec.mainClass="com.example.App" -q
     ```
+
+## UML Diagrams
+
+
+### version-2.0.0
+
+<p align="center">
+  <img src="./umls/version-2.0.0.jpeg" alt="Version 2 UML" height="500" width="400">
+</p>
+
+### version-1.0.0
+
+<p align="center">
+  <img src="./umls/version-1.0.0.jpeg" alt="Version 1 UML" width="400">
+</p>
