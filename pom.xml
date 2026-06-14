@@ -1,0 +1,90 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.github.sandeep-being-infinity</groupId>
+  <artifactId>bi-range-sum-lib</artifactId>
+  <packaging>jar</packaging>
+  <version>2.0.0</version>
+  <!-- <name>bi-range-sum-lib</name> -->
+  <name>BI Range Queries Library</name>
+  <description>Range Sum Queries range query library for Java</description>
+  <url>https://github.com/sandeep-being-infinity/bi-range-sum-lib</url>
+
+<licenses>
+  <license>
+    <name>Apache License</name>
+    <url>https://opensource.org/license/Apache-1.1</url>
+  </license>
+</licenses>
+
+<developers>
+  <developer>
+    <id>sandeep</id>
+    <name>Sandeep</name>
+    <email>sandeep@being-infinity.com</email>
+  </developer>
+</developers>
+
+<scm>
+  <url>https://github.com/yourid/range-queries-lib</url>
+  <connection>scm:git:git://github.com/yourid/range-queries-lib.git</connection>
+</scm>
+
+
+
+  <build>
+  <plugins>
+
+  <!-- 1. Sources JAR (required) -->
+  <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-source-plugin</artifactId>
+    <version>3.3.1</version>
+    <executions><execution>
+      <goals><goal>jar-no-fork</goal></goals>
+    </execution></executions>
+  </plugin>
+
+  <!-- 2. Javadoc JAR (required) -->
+  <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-javadoc-plugin</artifactId>
+    <version>3.6.3</version>
+    <executions><execution>
+      <goals><goal>jar</goal></goals>
+    </execution></executions>
+  </plugin>
+
+  <!-- 3. GPG signing (required) -->
+  <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-gpg-plugin</artifactId>
+    <version>3.2.4</version>
+    <executions><execution>
+      <phase>verify</phase>
+      <goals><goal>sign</goal></goals>
+    </execution></executions>
+  </plugin>
+
+  <!-- 4. Central Publishing plugin (new 2024 portal) -->
+  <plugin>
+    <groupId>org.sonatype.central</groupId>
+    <artifactId>central-publishing-maven-plugin</artifactId>
+    <version>0.5.0</version>
+    <extensions>true</extensions>
+    <configuration>
+      <publishingServerId>central</publishingServerId>
+      <autoPublish>true</autoPublish>
+    </configuration>
+  </plugin>
+
+</plugins></build>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
