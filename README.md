@@ -43,7 +43,6 @@ Pre-Requisites:  JAVA and MAVEN should be installed.
             System.out.println(irq.rangeSum(3, 7));
         }
     }
-
     ```
 5.  Run Project
     ```
